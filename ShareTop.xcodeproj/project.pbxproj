@@ -23,11 +23,11 @@
 		DFEEB1FD172C6870004285DA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB1FC172C686F004285DA /* Game.m */; };
 		DFEEB200172C6870004285DA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB1FF172C6870004285DA /* Profile.m */; };
 		DFEEB202172C69DA004285DA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEEB201172C69DA004285DA /* Storyboard.storyboard */; };
-		DFEEB208172C6C14004285DA /* settingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB207172C6C14004285DA /* settingsVC.m */; };
-		DFEEB20B172C6C28004285DA /* friendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB20A172C6C28004285DA /* friendsVC.m */; };
-		DFEEB20E172C6F0F004285DA /* myCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB20D172C6F0F004285DA /* myCollectionVC.m */; };
-		DFEEB211172C6F7E004285DA /* addGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB210172C6F7D004285DA /* addGameVC.m */; };
-		DFEEB217172C726C004285DA /* addFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB216172C726C004285DA /* addFriendVC.m */; };
+		DFEEB21A172C915F004285DA /* sharedTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB219172C915F004285DA /* sharedTVC.m */; };
+		DFEEB220172C9195004285DA /* settingsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB21F172C9195004285DA /* settingsTVC.m */; };
+		DFEEB223172C91CC004285DA /* friendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB222172C91CB004285DA /* friendsTVC.m */; };
+		DFEEB226172C92C9004285DA /* addGameTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB225172C92C9004285DA /* addGameTVC.m */; };
+		DFEEB229172C934D004285DA /* addFriendTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB228172C934D004285DA /* addFriendTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,16 +54,16 @@
 		DFEEB1FE172C6870004285DA /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		DFEEB1FF172C6870004285DA /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		DFEEB201172C69DA004285DA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		DFEEB206172C6C14004285DA /* settingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsVC.h; sourceTree = "<group>"; };
-		DFEEB207172C6C14004285DA /* settingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsVC.m; sourceTree = "<group>"; };
-		DFEEB209172C6C27004285DA /* friendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendsVC.h; sourceTree = "<group>"; };
-		DFEEB20A172C6C28004285DA /* friendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = friendsVC.m; sourceTree = "<group>"; };
-		DFEEB20C172C6F0F004285DA /* myCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myCollectionVC.h; path = ../myCollectionVC.h; sourceTree = "<group>"; };
-		DFEEB20D172C6F0F004285DA /* myCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myCollectionVC.m; path = ../myCollectionVC.m; sourceTree = "<group>"; };
-		DFEEB20F172C6F7D004285DA /* addGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addGameVC.h; sourceTree = "<group>"; };
-		DFEEB210172C6F7D004285DA /* addGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addGameVC.m; sourceTree = "<group>"; };
-		DFEEB215172C726C004285DA /* addFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addFriendVC.h; path = ../addFriendVC.h; sourceTree = "<group>"; };
-		DFEEB216172C726C004285DA /* addFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addFriendVC.m; path = ../addFriendVC.m; sourceTree = "<group>"; };
+		DFEEB218172C915F004285DA /* sharedTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sharedTVC.h; path = ../sharedTVC.h; sourceTree = "<group>"; };
+		DFEEB219172C915F004285DA /* sharedTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sharedTVC.m; path = ../sharedTVC.m; sourceTree = "<group>"; };
+		DFEEB21E172C9195004285DA /* settingsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsTVC.h; sourceTree = "<group>"; };
+		DFEEB21F172C9195004285DA /* settingsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsTVC.m; sourceTree = "<group>"; };
+		DFEEB221172C91CB004285DA /* friendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = friendsTVC.h; path = ../friendsTVC.h; sourceTree = "<group>"; };
+		DFEEB222172C91CB004285DA /* friendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = friendsTVC.m; path = ../friendsTVC.m; sourceTree = "<group>"; };
+		DFEEB224172C92C9004285DA /* addGameTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addGameTVC.h; sourceTree = "<group>"; };
+		DFEEB225172C92C9004285DA /* addGameTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addGameTVC.m; sourceTree = "<group>"; };
+		DFEEB227172C934D004285DA /* addFriendTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addFriendTVC.h; sourceTree = "<group>"; };
+		DFEEB228172C934D004285DA /* addFriendTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addFriendTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,16 +115,16 @@
 			isa = PBXGroup;
 			children = (
 				DFEEB201172C69DA004285DA /* Storyboard.storyboard */,
-				DFEEB215172C726C004285DA /* addFriendVC.h */,
-				DFEEB216172C726C004285DA /* addFriendVC.m */,
-				DFEEB20F172C6F7D004285DA /* addGameVC.h */,
-				DFEEB210172C6F7D004285DA /* addGameVC.m */,
-				DFEEB20C172C6F0F004285DA /* myCollectionVC.h */,
-				DFEEB20D172C6F0F004285DA /* myCollectionVC.m */,
-				DFEEB206172C6C14004285DA /* settingsVC.h */,
-				DFEEB207172C6C14004285DA /* settingsVC.m */,
-				DFEEB209172C6C27004285DA /* friendsVC.h */,
-				DFEEB20A172C6C28004285DA /* friendsVC.m */,
+				DFEEB227172C934D004285DA /* addFriendTVC.h */,
+				DFEEB228172C934D004285DA /* addFriendTVC.m */,
+				DFEEB224172C92C9004285DA /* addGameTVC.h */,
+				DFEEB225172C92C9004285DA /* addGameTVC.m */,
+				DFEEB218172C915F004285DA /* sharedTVC.h */,
+				DFEEB219172C915F004285DA /* sharedTVC.m */,
+				DFEEB221172C91CB004285DA /* friendsTVC.h */,
+				DFEEB222172C91CB004285DA /* friendsTVC.m */,
+				DFEEB21E172C9195004285DA /* settingsTVC.h */,
+				DFEEB21F172C9195004285DA /* settingsTVC.m */,
 				DFEEB1E5172C4483004285DA /* AppDelegate.h */,
 				DFEEB1E6172C4483004285DA /* AppDelegate.m */,
 				DFEEB1EE172C4483004285DA /* ShareTop.xcdatamodeld */,
@@ -225,11 +225,11 @@
 				DFEEB1FA172C686F004285DA /* Friends.m in Sources */,
 				DFEEB1FD172C6870004285DA /* Game.m in Sources */,
 				DFEEB200172C6870004285DA /* Profile.m in Sources */,
-				DFEEB208172C6C14004285DA /* settingsVC.m in Sources */,
-				DFEEB20B172C6C28004285DA /* friendsVC.m in Sources */,
-				DFEEB20E172C6F0F004285DA /* myCollectionVC.m in Sources */,
-				DFEEB211172C6F7E004285DA /* addGameVC.m in Sources */,
-				DFEEB217172C726C004285DA /* addFriendVC.m in Sources */,
+				DFEEB21A172C915F004285DA /* sharedTVC.m in Sources */,
+				DFEEB220172C9195004285DA /* settingsTVC.m in Sources */,
+				DFEEB223172C91CC004285DA /* friendsTVC.m in Sources */,
+				DFEEB226172C92C9004285DA /* addGameTVC.m in Sources */,
+				DFEEB229172C934D004285DA /* addFriendTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

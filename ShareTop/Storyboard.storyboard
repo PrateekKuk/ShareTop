@@ -4,105 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--SettingsVC - Settings-->
-        <scene sceneID="ebu-Dy-wZG">
-            <objects>
-                <viewController id="SS5-J7-sk3" customClass="settingsVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0c5-oG-37O">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Settings" id="lHY-RN-c7I"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nnr-h8-3Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="809" y="595"/>
-        </scene>
-        <!--FriendsVC - Friends-->
-        <scene sceneID="n7L-Af-Y9N">
-            <objects>
-                <viewController id="6R2-DX-e0b" customClass="friendsVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K9H-pa-txd">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Friends" id="cub-M5-OVc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Q96-rf-bqs">
-                            <connections>
-                                <segue destination="Rkk-4e-aAa" kind="push" id="TiM-6u-h92"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ER4-iO-xTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="809" y="-130"/>
-        </scene>
-        <!--Add FriendVC - Add Friend-->
-        <scene sceneID="kB4-i0-1yf">
-            <objects>
-                <viewController id="Rkk-4e-aAa" customClass="addFriendVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q9P-yF-rPp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Add Friend" id="Dbp-vy-4Zd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vaD-dh-43J">
-                            <connections>
-                                <action selector="saveFriend:" destination="Rkk-4e-aAa" id="mFg-36-7sx"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4k7-TP-FkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1201" y="-103"/>
-        </scene>
-        <!--My CollectionVC - My Collection-->
-        <scene sceneID="vTE-Sr-LCr">
-            <objects>
-                <viewController id="hZX-YR-qxO" customClass="myCollectionVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8EA-hA-Mw2">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="My Collection" id="XBQ-4j-daF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6d2-ga-8I6">
-                            <connections>
-                                <segue destination="oW7-pT-qxl" kind="push" id="eAw-Mj-yCG"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qhC-WP-aiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="809" y="-783"/>
-        </scene>
-        <!--Add GameVC - Add Game-->
-        <scene sceneID="VUc-ej-TvU">
-            <objects>
-                <viewController id="oW7-pT-qxl" customClass="addGameVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tCs-om-ebY">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Add Game" id="6on-Hb-xyz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YKi-s7-AMj">
-                            <connections>
-                                <action selector="saveGame:" destination="oW7-pT-qxl" id="3LW-n1-r1g"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRD-fe-oCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1201" y="-770"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Olg-bI-FfZ">
             <objects>
@@ -114,94 +15,241 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jis-pp-gKL" kind="relationship" relationship="viewControllers" id="5EZ-90-EJd"/>
-                        <segue destination="Xjz-ke-aZA" kind="relationship" relationship="viewControllers" id="PbQ-Cq-woh"/>
-                        <segue destination="Ayx-bV-rcg" kind="relationship" relationship="viewControllers" id="eTR-4s-QC1"/>
+                        <segue destination="iEA-Dg-syd" kind="relationship" relationship="viewControllers" id="6Dk-IK-ael"/>
+                        <segue destination="1gt-MT-IYN" kind="relationship" relationship="viewControllers" id="9Id-xU-Xzy"/>
+                        <segue destination="cCO-rg-F1c" kind="relationship" relationship="viewControllers" id="CrY-DP-b5x"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjT-YF-4du" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-639" y="-576"/>
         </scene>
-        <!--Navigation Controller - Shared-->
-        <scene sceneID="ymD-jn-ps0">
+        <!--SharedTVC - My Games-->
+        <scene sceneID="lEy-dL-HAS">
             <objects>
-                <navigationController id="jis-pp-gKL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Shared" id="4uD-fl-VSS"/>
+                <tableViewController id="PrU-Fv-Rbf" customClass="sharedTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jYB-Zf-Rwp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="dDn-R5-c5y">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PrU-Fv-Rbf" id="kIQ-O6-Vry"/>
+                            <outlet property="delegate" destination="PrU-Fv-Rbf" id="q1e-v7-28g"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Games" id="gLQ-8F-BgC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Ck-1h-wZH">
+                            <connections>
+                                <segue destination="WsG-gH-tF2" kind="push" id="PQ3-Bw-6Wf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMP-RZ-fP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="-662"/>
+        </scene>
+        <!--Add GameTVC - Add Game-->
+        <scene sceneID="6Rp-zI-Cqh">
+            <objects>
+                <tableViewController id="WsG-gH-tF2" customClass="addGameTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3Yk-eN-GJD">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="7qd-Xt-01O">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="WsG-gH-tF2" id="dZa-hl-yG4"/>
+                            <outlet property="delegate" destination="WsG-gH-tF2" id="2kB-YW-OEz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Game" id="6h9-l5-HxP">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="e1T-Wx-mL5">
+                            <connections>
+                                <action selector="saveGame:" destination="WsG-gH-tF2" id="Jkh-Hw-ksB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8k-xU-aWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="-652"/>
+        </scene>
+        <!--FriendsTVC - My Friends-->
+        <scene sceneID="NZx-kg-ZE7">
+            <objects>
+                <tableViewController id="BiC-A1-mVX" customClass="friendsTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JFp-lZ-CNX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="gY1-Vx-wEU">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BiC-A1-mVX" id="lsv-PP-amR"/>
+                            <outlet property="delegate" destination="BiC-A1-mVX" id="7Zx-5n-3gm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Friends" id="8el-ii-tmx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u0N-i5-y7L">
+                            <connections>
+                                <segue destination="Sww-cj-hp6" kind="push" id="e9f-Wd-hNg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhm-as-D6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="34"/>
+        </scene>
+        <!--Add FriendTVC - Add Friend-->
+        <scene sceneID="Mix-Tl-BS7">
+            <objects>
+                <tableViewController id="Sww-cj-hp6" customClass="addFriendTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="F6P-cY-Rs5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Sww-cj-hp6" id="gjH-oR-hyp"/>
+                            <outlet property="delegate" destination="Sww-cj-hp6" id="2Bk-ad-AN6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Friend" id="ceL-ka-has">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fOr-2Q-mC8">
+                            <connections>
+                                <action selector="saveFriend:" destination="Sww-cj-hp6" id="ztt-pK-SYd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qc0-IX-Aiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="46"/>
+        </scene>
+        <!--SettingsTVC - Settings-->
+        <scene sceneID="X7W-f4-KhR">
+            <objects>
+                <tableViewController id="IZb-83-okX" customClass="settingsTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mIP-mB-HCv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="IZb-83-okX" id="k7O-bB-JS4"/>
+                            <outlet property="delegate" destination="IZb-83-okX" id="ikH-1X-ZkZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="aeb-K1-DUo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6c-6A-V3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="722"/>
+        </scene>
+        <!--Navigation Controller - My Games-->
+        <scene sceneID="ULz-KN-cKb">
+            <objects>
+                <navigationController id="iEA-Dg-syd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Games" id="V7T-cH-GsE"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iab-O1-uaF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZs-ah-JvJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hZX-YR-qxO" kind="relationship" relationship="rootViewController" id="E1x-Z9-Il6"/>
+                        <segue destination="PrU-Fv-Rbf" kind="relationship" relationship="rootViewController" id="9WL-af-Uox"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5tx-MM-qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9r-gF-it2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="-783"/>
+            <point key="canvasLocation" x="-4" y="-662"/>
         </scene>
         <!--Navigation Controller - My Friends-->
-        <scene sceneID="vPN-ug-Ok5">
+        <scene sceneID="KGn-Eg-GLt">
             <objects>
-                <navigationController id="Xjz-ke-aZA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Friends" id="0MV-6d-t4N"/>
+                <navigationController id="1gt-MT-IYN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Friends" id="Xq0-hQ-4OI"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="StC-wX-m5Z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VJ1-OA-lLh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="6R2-DX-e0b" kind="relationship" relationship="rootViewController" id="l8s-Xo-26n"/>
+                        <segue destination="BiC-A1-mVX" kind="relationship" relationship="rootViewController" id="jDE-Bv-1LX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1jY-4j-wAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9S-mt-lR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="-130"/>
+            <point key="canvasLocation" x="8" y="34"/>
         </scene>
         <!--Navigation Controller - Settings-->
-        <scene sceneID="UDz-RH-Vzy">
+        <scene sceneID="XVX-4Q-hU6">
             <objects>
-                <navigationController id="Ayx-bV-rcg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="WgF-NP-266"/>
+                <navigationController id="cCO-rg-F1c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="akt-D5-a2l"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZDM-AV-Hjw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AYV-M0-QWw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SS5-J7-sk3" kind="relationship" relationship="rootViewController" id="087-js-88M"/>
+                        <segue destination="IZb-83-okX" kind="relationship" relationship="rootViewController" id="MvQ-DA-WSK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LIU-T0-ZVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsO-2Y-6Hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="595"/>
+            <point key="canvasLocation" x="16" y="722"/>
         </scene>
     </scenes>
     <classes>
-        <class className="addFriendVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/addFriendVC.h"/>
+        <class className="addFriendTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/addFriendTVC.h"/>
             <relationships>
                 <relationship kind="action" name="saveFriend:"/>
             </relationships>
         </class>
-        <class className="addGameVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/addGameVC.h"/>
+        <class className="addGameTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/addGameTVC.h"/>
             <relationships>
                 <relationship kind="action" name="saveGame:"/>
             </relationships>
         </class>
-        <class className="friendsVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/friendsVC.h"/>
+        <class className="friendsTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/friendsTVC.h"/>
         </class>
-        <class className="myCollectionVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/myCollectionVC.h"/>
+        <class className="settingsTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/settingsTVC.h"/>
         </class>
-        <class className="settingsVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/settingsVC.h"/>
+        <class className="sharedTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/sharedTVC.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
