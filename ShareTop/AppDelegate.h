@@ -19,6 +19,6 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-- (NSString * )getCurrentUsername;
+- (int)getCurrentUserId;
 
 @end

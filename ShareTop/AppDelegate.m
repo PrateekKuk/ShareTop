@@ -313,9 +313,9 @@ Profile *CurrProfile;
     }
 }
 
-- (NSString * )getCurrentUsername
+- (int )getCurrentUserId
 {
-    return @"bstevens";
+    return 1;
 }
 
 @end
