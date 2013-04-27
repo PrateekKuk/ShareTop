@@ -22,7 +22,7 @@ Profile *CurrProfile;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self create];
+ //   [self create];
     return YES;
 }
 
@@ -313,7 +313,7 @@ Profile *CurrProfile;
     }
 }
 
-- (NSString * )getCurrentUserName
+- (NSString * )getCurrentUsername
 {
     return @"bstevens";
 }
