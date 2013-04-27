@@ -10,4 +10,6 @@
 
 @interface addGameTVC : UITableViewController
 
+- (IBAction)saveGame:(id)sender;
+
 @end

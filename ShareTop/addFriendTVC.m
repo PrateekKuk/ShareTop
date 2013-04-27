@@ -118,4 +118,6 @@
      */
 }
 
+- (IBAction)saveFriend:(id)sender {
+}
 @end

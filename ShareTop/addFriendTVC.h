@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface addFriendTVC : UITableViewController
+- (IBAction)saveFriend:(id)sender;
 
 @end
