@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Friends" representedClassName="Friends" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="friendsToProfile" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="profileToFriends" inverseEntity="Profile" syncable="YES"/>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="currentId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="gameDescript" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="system" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gameToProfile" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="profileToGame" inverseEntity="Profile" syncable="YES"/>
+    </entity>
+    <entity name="Profile" representedClassName="Profile" syncable="YES">
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="profileToFriends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Friends" inverseName="friendsToProfile" inverseEntity="Friends" syncable="YES"/>
+        <relationship name="profileToGame" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="gameToProfile" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Profile" positionX="-110" positionY="-162" width="128" height="118"/>
+        <element name="Friends" positionX="-297" positionY="9" width="128" height="88"/>
+        <element name="Game" positionX="88" positionY="-36" width="128" height="148"/>
+    </elements>
 </model>
