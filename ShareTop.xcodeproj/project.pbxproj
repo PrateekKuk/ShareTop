@@ -27,6 +27,7 @@
 		DFEEB20B172C6C28004285DA /* friendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB20A172C6C28004285DA /* friendsVC.m */; };
 		DFEEB20E172C6F0F004285DA /* myCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB20D172C6F0F004285DA /* myCollectionVC.m */; };
 		DFEEB211172C6F7E004285DA /* addGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB210172C6F7D004285DA /* addGameVC.m */; };
+		DFEEB217172C726C004285DA /* addFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB216172C726C004285DA /* addFriendVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		DFEEB20D172C6F0F004285DA /* myCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myCollectionVC.m; path = ../myCollectionVC.m; sourceTree = "<group>"; };
 		DFEEB20F172C6F7D004285DA /* addGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addGameVC.h; sourceTree = "<group>"; };
 		DFEEB210172C6F7D004285DA /* addGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addGameVC.m; sourceTree = "<group>"; };
+		DFEEB215172C726C004285DA /* addFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addFriendVC.h; path = ../addFriendVC.h; sourceTree = "<group>"; };
+		DFEEB216172C726C004285DA /* addFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addFriendVC.m; path = ../addFriendVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				DFEEB201172C69DA004285DA /* Storyboard.storyboard */,
+				DFEEB215172C726C004285DA /* addFriendVC.h */,
+				DFEEB216172C726C004285DA /* addFriendVC.m */,
 				DFEEB20F172C6F7D004285DA /* addGameVC.h */,
 				DFEEB210172C6F7D004285DA /* addGameVC.m */,
 				DFEEB20C172C6F0F004285DA /* myCollectionVC.h */,
@@ -224,6 +229,7 @@
 				DFEEB20B172C6C28004285DA /* friendsVC.m in Sources */,
 				DFEEB20E172C6F0F004285DA /* myCollectionVC.m in Sources */,
 				DFEEB211172C6F7E004285DA /* addGameVC.m in Sources */,
+				DFEEB217172C726C004285DA /* addFriendVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 				DFEEB1F5172C4483004285DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

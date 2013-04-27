@@ -1,18 +1,18 @@
 //
-//  addGameVC.m
+//  addFriendVC.m
 //  ShareTop
 //
 //  Created by Prateek Kukreja on 4/27/13.
 //  Copyright (c) 2013 Prateek Kukreja. All rights reserved.
 //
 
-#import "addGameVC.h"
+#import "addFriendVC.h"
 
-@interface addGameVC ()
+@interface addFriendVC ()
 
 @end
 
-@implementation addGameVC
+@implementation addFriendVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)saveGame:(id)sender {
+- (IBAction)addFriend:(id)sender {
+}
+- (IBAction)saveFriend:(id)sender {
 }
 @end

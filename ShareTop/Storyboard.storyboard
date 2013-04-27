@@ -40,17 +40,21 @@
             </objects>
             <point key="canvasLocation" x="809" y="-130"/>
         </scene>
-        <!--View Controller - Add Friend-->
+        <!--Add FriendVC - Add Friend-->
         <scene sceneID="kB4-i0-1yf">
             <objects>
-                <viewController id="Rkk-4e-aAa" sceneMemberID="viewController">
+                <viewController id="Rkk-4e-aAa" customClass="addFriendVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q9P-yF-rPp">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Friend" id="Dbp-vy-4Zd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vaD-dh-43J"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vaD-dh-43J">
+                            <connections>
+                                <action selector="saveFriend:" destination="Rkk-4e-aAa" id="mFg-36-7sx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4k7-TP-FkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,7 +92,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Game" id="6on-Hb-xyz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YKi-s7-AMj"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YKi-s7-AMj">
+                            <connections>
+                                <action selector="saveGame:" destination="oW7-pT-qxl" id="3LW-n1-r1g"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRD-fe-oCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,7 +107,7 @@
         <scene sceneID="Olg-bI-FfZ">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="c5C-2r-aAM" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="o9W-Mf-HCH">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -174,8 +182,17 @@
         </scene>
     </scenes>
     <classes>
+        <class className="addFriendVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/addFriendVC.h"/>
+            <relationships>
+                <relationship kind="action" name="saveFriend:"/>
+            </relationships>
+        </class>
         <class className="addGameVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/addGameVC.h"/>
+            <relationships>
+                <relationship kind="action" name="saveGame:"/>
+            </relationships>
         </class>
         <class className="friendsVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/friendsVC.h"/>
