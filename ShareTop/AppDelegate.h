@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Profile.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -18,5 +19,6 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (NSString * )getCurrentUsername;
 
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Profile.h"
+#import "Game.h"
+#import "Friends.h"
 
 @implementation AppDelegate
 
@@ -14,9 +17,12 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+Profile *CurrProfile;
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+    [self create];
     return YES;
 }
 
@@ -141,6 +147,175 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void) create {
+    // Grab the context
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    // Grab the Label entity
+    Profile *profile = [NSEntityDescription insertNewObjectForEntityForName:@"Profile" inManagedObjectContext:context];
+    
+    // Set label name
+    profile.fullName = @"Bob Stevens";
+    
+    // Set User name
+    profile.userName = @"bstevens";
+    
+    
+    
+    // Set the user id numnber
+    NSNumber *userId  = [[NSNumber alloc]initWithInt:1];
+    profile.id = userId;
+    
+    // Grab the Label entity
+    Profile *profile2 = [NSEntityDescription insertNewObjectForEntityForName:@"Profile" inManagedObjectContext:context];
+    
+    // Set label name
+    profile2.fullName = @"Jon Wall";
+    
+    // Set User name
+    profile2.userName = @"jwall";
+    
+    // Set the user id numnber
+    NSNumber *userId2  = [[NSNumber alloc]initWithInt:2];
+    profile2.id = userId;
+    
+    // Grab the Label entity
+    Profile *profile3 = [NSEntityDescription insertNewObjectForEntityForName:@"Profile" inManagedObjectContext:context];
+    
+    // Set label name
+    profile3.fullName = @"John Doe";
+    
+    // Set User name
+    profile3.userName = @"jdoe";
+    
+    // Set the user id numnber
+    NSNumber *userId3  = [[NSNumber alloc]initWithInt:3];
+    profile3.id = userId3;
+    // Grab the Label entity
+   
+    Profile *profile4 = [NSEntityDescription insertNewObjectForEntityForName:@"Profile" inManagedObjectContext:context];
+    
+    // Set label name
+    profile4.fullName = @"Mike Smith";
+    
+    // Set User name
+    profile4.userName = @"msmith";
+    
+    // Set the user id numnber
+    NSNumber *userId4  = [[NSNumber alloc]initWithInt:4];
+    profile4.id = userId4;
+    
+    
+    
+    //Create Friend
+    Friends *friend = [NSEntityDescription insertNewObjectForEntityForName:@"Friends" inManagedObjectContext:context];
+    friend.id = userId;
+    friend.userName = @"bstevens";
+    
+    //Create Friend
+    Friends *friend2 = [NSEntityDescription insertNewObjectForEntityForName:@"Friends" inManagedObjectContext:context];
+    friend2.id = userId2;
+    friend2.userName = @"jwall";
+    //Create Friend
+    Friends *friend3 = [NSEntityDescription insertNewObjectForEntityForName:@"Friends" inManagedObjectContext:context];
+    friend3.id = userId3;
+    friend3.userName = @"jdoe";
+    
+    //Create Friend
+    Friends *friend4 = [NSEntityDescription insertNewObjectForEntityForName:@"Friends" inManagedObjectContext:context];
+    friend4.id = userId4;
+    friend4.userName = @"msmith";
+    
+    
+    //Games Time!!!
+    Game *halo = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    halo.status = @"available";
+    halo.gameDescript = @"First Person Shooter";
+    NSNumber *gameId1  = [[NSNumber alloc]initWithInt:1];
+    halo.id = gameId1;
+    halo.system = @"xbox";
+    
+    Game *cod = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    cod.status = @"available";
+    cod.gameDescript = @"First Person Shooter";
+    NSNumber *gameId2  = [[NSNumber alloc]initWithInt:2];
+    cod.id = gameId2;
+    cod.system = @"xbox";
+    
+    Game *madden = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    madden.status = @"borrowed";
+    madden.gameDescript = @"Sports Game";
+    NSNumber *gameId3  = [[NSNumber alloc]initWithInt:3];
+    madden.id = gameId3;
+    madden.system = @"ps3";
+    
+    Game *pong = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    pong.status = @"available";
+    pong.gameDescript = @"old school game";
+    NSNumber *gameId4  = [[NSNumber alloc]initWithInt:4];
+    pong.id = gameId4;
+    pong.system = @"ps3";
+    
+    Game *fifa = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    fifa.status = @"notAvailable";
+    fifa.gameDescript = @"sports game";
+    NSNumber *gameId5  = [[NSNumber alloc]initWithInt:5];
+    fifa.id = gameId5;
+    fifa.system = @"ps3";
+    
+    Game *uncharted = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    uncharted.status = @"available";
+    uncharted.gameDescript = @"adventure game";
+    NSNumber *gameId6  = [[NSNumber alloc]initWithInt:6];
+    uncharted.id = gameId6;
+    uncharted.system = @"ps3";
+    
+    Game *coolBoarders= [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    coolBoarders.status = @"available";
+    coolBoarders.gameDescript = @"Snowboarding game";
+    NSNumber *gameId7  = [[NSNumber alloc]initWithInt:7];
+    coolBoarders.id = gameId7;
+    coolBoarders.system = @"ps2";
+    
+    Game *marioKart = [NSEntityDescription insertNewObjectForEntityForName:@"Game" inManagedObjectContext:context];
+    marioKart.status = @"available";
+    marioKart.gameDescript = @"racing game";
+    NSNumber *gameId8  = [[NSNumber alloc]initWithInt:8];
+    marioKart.id = gameId8;
+    marioKart.system = @"n64";
+    
+    // Set relationships
+    [profile addProfileToGameObject:uncharted];
+    [profile addProfileToGameObject:fifa];
+    [profile addProfileToGameObject:pong];
+    [profile2 addProfileToGameObject:madden];
+    [profile2 addProfileToGameObject:cod];
+    [profile2 addProfileToGameObject:halo];
+    [profile3 addProfileToGameObject:marioKart];
+    [profile4 addProfileToGameObject:coolBoarders];
+    
+    [profile addProfileToFriendsObject:friend2];
+    [profile2 addProfileToFriendsObject:friend];
+    [profile2 addProfileToFriendsObject:friend3];
+    [profile2 addProfileToFriendsObject:friend4];
+    [profile3 addProfileToFriendsObject:friend2];
+    [profile4 addProfileToFriendsObject:friend2];
+
+    
+    // Save everything
+    NSError *error = nil;
+    if ([context save:&error]) {
+        NSLog(@"The save was successful!");
+    } else {
+        NSLog(@"The save wasn't successful: %@", [error userInfo]);
+    }
+}
+
+- (NSString * )getCurrentUserName
+{
+    return @"bstevens";
 }
 
 @end
