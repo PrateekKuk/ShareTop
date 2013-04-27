@@ -1,5 +1,5 @@
 //
-//  settingsVC.h
+//  friendsTVC.h
 //  ShareTop
 //
 //  Created by Prateek Kukreja on 4/27/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface settingsVC : UIViewController
+@interface friendsTVC : UITableViewController
 
 @end

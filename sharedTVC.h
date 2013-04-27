@@ -1,5 +1,5 @@
 //
-//  addGameVC.h
+//  sharedTVC.h
 //  ShareTop
 //
 //  Created by Prateek Kukreja on 4/27/13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface addGameVC : UIViewController
-- (IBAction)saveGame:(id)sender;
+@interface sharedTVC : UITableViewController
 
 @end

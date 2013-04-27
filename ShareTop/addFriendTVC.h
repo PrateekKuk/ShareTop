@@ -1,5 +1,5 @@
 //
-//  addFriendVC.h
+//  addFriendTVC.h
 //  ShareTop
 //
 //  Created by Prateek Kukreja on 4/27/13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface addFriendVC : UIViewController
-- (IBAction)saveFriend:(id)sender;
+@interface addFriendTVC : UITableViewController
 
 @end
