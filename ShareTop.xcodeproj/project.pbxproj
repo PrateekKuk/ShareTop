@@ -23,6 +23,10 @@
 		DFEEB1FD172C6870004285DA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB1FC172C686F004285DA /* Game.m */; };
 		DFEEB200172C6870004285DA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB1FF172C6870004285DA /* Profile.m */; };
 		DFEEB202172C69DA004285DA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEEB201172C69DA004285DA /* Storyboard.storyboard */; };
+		DFEEB208172C6C14004285DA /* settingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB207172C6C14004285DA /* settingsVC.m */; };
+		DFEEB20B172C6C28004285DA /* friendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB20A172C6C28004285DA /* friendsVC.m */; };
+		DFEEB20E172C6F0F004285DA /* myCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB20D172C6F0F004285DA /* myCollectionVC.m */; };
+		DFEEB211172C6F7E004285DA /* addGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEEB210172C6F7D004285DA /* addGameVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,14 @@
 		DFEEB1FE172C6870004285DA /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		DFEEB1FF172C6870004285DA /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		DFEEB201172C69DA004285DA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DFEEB206172C6C14004285DA /* settingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsVC.h; sourceTree = "<group>"; };
+		DFEEB207172C6C14004285DA /* settingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsVC.m; sourceTree = "<group>"; };
+		DFEEB209172C6C27004285DA /* friendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendsVC.h; sourceTree = "<group>"; };
+		DFEEB20A172C6C28004285DA /* friendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = friendsVC.m; sourceTree = "<group>"; };
+		DFEEB20C172C6F0F004285DA /* myCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myCollectionVC.h; path = ../myCollectionVC.h; sourceTree = "<group>"; };
+		DFEEB20D172C6F0F004285DA /* myCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myCollectionVC.m; path = ../myCollectionVC.m; sourceTree = "<group>"; };
+		DFEEB20F172C6F7D004285DA /* addGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addGameVC.h; sourceTree = "<group>"; };
+		DFEEB210172C6F7D004285DA /* addGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addGameVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,15 @@
 		DFEEB1DC172C4483004285DA /* ShareTop */ = {
 			isa = PBXGroup;
 			children = (
+				DFEEB201172C69DA004285DA /* Storyboard.storyboard */,
+				DFEEB20F172C6F7D004285DA /* addGameVC.h */,
+				DFEEB210172C6F7D004285DA /* addGameVC.m */,
+				DFEEB20C172C6F0F004285DA /* myCollectionVC.h */,
+				DFEEB20D172C6F0F004285DA /* myCollectionVC.m */,
+				DFEEB206172C6C14004285DA /* settingsVC.h */,
+				DFEEB207172C6C14004285DA /* settingsVC.m */,
+				DFEEB209172C6C27004285DA /* friendsVC.h */,
+				DFEEB20A172C6C28004285DA /* friendsVC.m */,
 				DFEEB1E5172C4483004285DA /* AppDelegate.h */,
 				DFEEB1E6172C4483004285DA /* AppDelegate.m */,
 				DFEEB1EE172C4483004285DA /* ShareTop.xcdatamodeld */,
@@ -109,7 +130,6 @@
 				DFEEB1F8172C686F004285DA /* Friends.h */,
 				DFEEB1F9172C686F004285DA /* Friends.m */,
 				DFEEB1DD172C4483004285DA /* Supporting Files */,
-				DFEEB201172C69DA004285DA /* Storyboard.storyboard */,
 			);
 			path = ShareTop;
 			sourceTree = "<group>";
@@ -200,6 +220,10 @@
 				DFEEB1FA172C686F004285DA /* Friends.m in Sources */,
 				DFEEB1FD172C6870004285DA /* Game.m in Sources */,
 				DFEEB200172C6870004285DA /* Profile.m in Sources */,
+				DFEEB208172C6C14004285DA /* settingsVC.m in Sources */,
+				DFEEB20B172C6C28004285DA /* friendsVC.m in Sources */,
+				DFEEB20E172C6F0F004285DA /* myCollectionVC.m in Sources */,
+				DFEEB211172C6F7E004285DA /* addGameVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
